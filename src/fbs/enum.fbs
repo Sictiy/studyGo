@@ -1,0 +1,11 @@
+namespace Proto;
+
+enum ACTION_STATE_:uint
+{
+    NONE = 10000,
+    RUNING = 10001,
+    SEND_ERROR = 10002,
+    OPERATE_ERROR = 10003,
+    TIME_OUT = 10004,
+    FINISH_SUCCESS = 10005,
+}
