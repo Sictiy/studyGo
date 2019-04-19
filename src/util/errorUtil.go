@@ -9,6 +9,10 @@ func CheckError(err error)  {
 }
 
 func LogFormat(format string, a ... interface{}){
+	if format == "" {
+		Log(a...)
+		return
+	}
 	format = format + "\n"
 	if a != nil{
 		_,e := fmt.Printf(format, a ...)
